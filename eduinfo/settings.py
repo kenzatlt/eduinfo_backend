@@ -2,6 +2,8 @@
 import os
 from pathlib import Path
 from decouple import config # Assure-toi que cet import est en haut
+import pymysql
+pymysql.install_as_MySQLdb()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
