@@ -114,6 +114,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Pour l'instant, on utilise CORS_ALLOW_ALL_ORIGINS pour le développement.
 CORS_ALLOW_ALL_ORIGINS = config('CORS_ALLOW_ALL_ORIGINS', default=True, cast=bool)
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://eduinfo-lime.vercel.app",
+]
 
 
 REST_FRAMEWORK = {
