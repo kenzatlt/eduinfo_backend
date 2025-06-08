@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'main',
+    'corsheaders',
     # 'whitenoise', # On n'ajoute pas whitenoise à INSTALLED_APPS, juste le middleware
 ]
 
@@ -41,6 +42,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'eduinfo.urls'
